@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            long toplam=0;
+            long carp = 1;
+            for (long i = 1; i <= 50; i++)
+            {
+                if (i%2==1)
+                {
+                    toplam = toplam + i; 
+                }
+                else
+                {
+                    carp = carp * i;
+                }
+               
+                
+            }
+            
+            Console.WriteLine("1 ile 50 arasýndaki tek sayýlarýn toplamý : {0}",toplam);
+            Console.WriteLine("1 ile 50 arasýndaki çift sayýlarýn carpýmý : {0}", carp);
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int sabit = 3;
+            int sonuc = 0;
+            for (int i = 2; i <= 10; i+=2)  
+            {
+                sonuc = i * sabit;
+                Console.WriteLine("{1} * {0} = {2}", i, sabit, sonuc);
+            }
+           
+            Console.ReadKey();
+        }
+    }
+}

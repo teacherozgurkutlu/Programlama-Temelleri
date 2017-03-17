@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string kullanýcýadi, sifre;
+            Console.Write("Kullanýcý adýný giriniz : ");
+            kullanýcýadi = Console.ReadLine();
+            Console.Write("Þifrenizi giriniz       : ");
+            sifre = Console.ReadLine();
+
+            if (kullanýcýadi == "admin") 
+            {
+                
+                 if (sifre == "1234")
+                {
+                   Console.Write("Programa hoþ geldiniz");
+                }
+                 else
+                {
+                   Console.Write("Þifreyi yanlýþ girdiniz");
+                }
+            }
+            else
+            {
+
+                if (sifre == "1234")
+                {
+                    Console.Write("Kullanýcý adý yanlýþ girdiniz");
+                }
+                else
+                {
+                    Console.Write("Bilgiler uyuþmuyor");
+                }
+            }
+
+
+
+            Console.ReadKey();
+
+        }
+    }
+}

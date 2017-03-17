@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double toplam=0;
+            double ort;
+            for (int i = 1; i <= 10; i++)
+            {
+                toplam = toplam + i;
+               
+                
+            }
+            ort = toplam / 10;
+            Console.WriteLine("1 ile 10 arasýndaki sayýlarýn ortalamasý : {0}",ort);
+            Console.ReadKey();
+        }
+    }
+}

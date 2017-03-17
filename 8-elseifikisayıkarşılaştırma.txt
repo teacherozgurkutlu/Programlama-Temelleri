@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication38
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi1, sayi2;
+            Console.Write("1. sayýyý giriniz: ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. sayýyý giriniz: ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            if (sayi1 > sayi2)
+            { 
+                Console.Write("{0} sayýsý {1} sayýsýndan büyüktür.", sayi1, sayi2);
+            }
+            else if (sayi1 < sayi2)
+            {
+                Console.Write("{0} sayýsý {1} sayýsýndan büyüktür.", sayi2, sayi1);
+            }
+            else
+            {
+                Console.Write("{0} sayýsý ile {1} sayýsý birbirine eþittir.", sayi1, sayi2);
+            }
+                Console.ReadKey();
+        }
+    }
+}

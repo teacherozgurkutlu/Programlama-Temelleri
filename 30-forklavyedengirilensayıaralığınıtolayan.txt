@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int toplam=0;
+            int a, b;
+            Console.Write("Baþlangýç deðerini giriniz : ");
+            a = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Bitiþ deðerini giriniz : ");
+            b = Convert.ToInt16(Console.ReadLine());
+            for (int i = a; i <= b; i++)
+            {
+                toplam = toplam + i;
+               
+                
+            }
+             Console.WriteLine("{0} ile {1} arasýndaki sayýlarýn toplamý : {2}",a,b,toplam);
+            Console.ReadKey();
+        }
+    }
+}

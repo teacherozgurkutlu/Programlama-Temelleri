@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int fakt = 1;
+            int sayi;
+            Console.Write("Faktöriyeli alýnacak sayýyý giriniz : ");
+            sayi = Convert.ToInt16(Console.ReadLine());
+            for (int i = 1; i <= sayi; i++) 
+            {
+                fakt = fakt * i;
+            }
+            Console.Write("{0}! iþlemi sonucu : {1}",sayi, fakt);
+            Console.ReadKey();
+        }
+    }
+}

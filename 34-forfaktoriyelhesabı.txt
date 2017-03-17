@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int fakt = 1;
+            for (int i = 1; i <= 6; i++)  //for (int i = 6; i >= 1; i--)
+            {
+                fakt = fakt * i;
+            }
+            Console.Write("6! iþlemi sonucu : " + fakt);
+            Console.ReadKey();
+
+        }
+    }
+}
