@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication29
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 4; i++)
+            {
+                for (int k = 4; k >= i; k--)
+                {
+                    Console.Write("*"); 
+                }
+                Console.WriteLine();
+            }
+
+            for (int i = 2; i <= 4; i++)
+            {
+                for (int k = 1; k <= i; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+        }
+    }
+}
