@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication25
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string sifre;
+            do
+            {
+                Console.Write("Þifreyi gir :");
+                sifre = Console.ReadLine(); 
+            } while (sifre!="dilara123");
+            Console.Write("Programa hoþ geldiniz!!!");
+            Console.ReadKey();
+        }
+    }
+}
