@@ -9,12 +9,15 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            int sayi = 1;
-            while (sayi <= 10)
+            int sayi = 0;
+            int toplam = 0;
+            while (sayi % 2 == 0)
             {
-                Console.WriteLine("Özgür Kutlu");
-                sayi++;// sayi+=1 //sayi=sayi+1;
+                toplam = toplam + sayi;
+                Console.Write("Sayi giriniz:");
+                sayi = Convert.ToInt16(Console.ReadLine());
             }
+            Console.Write("Girilen sayıların toplamı :" + toplam);
             Console.ReadKey();
 
         }

@@ -9,12 +9,28 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            int sayi = 1;
-            while (sayi <= 10)
+            string sifre = "";
+            int hak = 3;
+            bool aktif = false;
+            while (sifre != "1234" && hak > 0)
             {
-                Console.WriteLine("Özgür Kutlu");
-                sayi++;// sayi+=1 //sayi=sayi+1;
+                Console.Write("Şifre giriniz : ");
+                sifre = Console.ReadLine();
+                hak--;
+                if (sifre == "1234")
+                {
+                    aktif = true;
+                }
             }
+            if (aktif == true)
+            {
+                Console.Write("Programa hoş geldiniz...");
+            }
+            else
+            {
+                Console.Write("Hakkınız bitti şifreyi bilemediniz");
+            }
+
             Console.ReadKey();
 
         }
