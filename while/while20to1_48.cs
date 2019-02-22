@@ -9,11 +9,11 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            int sayi = 1;
-            while (sayi <= 10)
+            int sayi = 20;
+            while (sayi > 0)
             {
-                Console.WriteLine("Özgür Kutlu");
-                sayi++;// sayi+=1 //sayi=sayi+1;
+                Console.WriteLine(sayi);
+                sayi--;// sayi+=1 //sayi=sayi+1;
             }
             Console.ReadKey();
 
