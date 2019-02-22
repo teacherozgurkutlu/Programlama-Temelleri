@@ -9,12 +9,14 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            int sayi = 1;
-            while (sayi <= 10)
+            string sifre = "";
+            while (sifre != "1234")
             {
-                Console.WriteLine("Özgür Kutlu");
-                sayi++;// sayi+=1 //sayi=sayi+1;
+                Console.Write("Şifre giriniz : ");
+                sifre = Console.ReadLine();
             }
+
+            Console.Write("Programa hoş geldiniz...");
             Console.ReadKey();
 
         }
